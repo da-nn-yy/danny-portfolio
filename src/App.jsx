@@ -1,12 +1,19 @@
 import Nav from "./Components/Nav"
+import About from "./Components/About";
+import Hero from "./Components/Hero";
+import Contact from "./Components/Contact";
 function App() {
 
   return (
-    <div className="overflow-hidden bg-no-repeat bg-slate-950">
-      <Nav />
+    <div>
+      <Nav/>
+      <Hero/>
+      <About/>
+      <Contact/>
+      <div className='h-[4000px]'></div>
     </div>
 
   )
 }
 
-export default App
+export default App;
