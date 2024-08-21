@@ -2,13 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+
 body{
     background-image: url("/src/assets/danBg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    .section {
-      @apply flex items-center py-8 lg:py-24 lg:h-screen;
-    }
 }
+
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    #005fd3,
+  #4CDB88
+  );
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+}
+
+.btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    #4CDB88,
+    #005fd3,
+  );
+}
+
+.gradient,
+.active {
+  background: linear-gradient(
+    92.23deg,
+    #005fd3,
+    #4CDB88
+  );
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+
+@layer base {
+  body {
+    background-image: url("/src/assets/danBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .section {
+    @apply flex items-center py-8 lg:py-24 lg:h-screen;
+  }
 }
