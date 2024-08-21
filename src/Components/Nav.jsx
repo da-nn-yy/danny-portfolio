@@ -1,5 +1,6 @@
-// import { BsClipboardData,BsBriefcase,BsChatFill } from "react-icons/bs";
-// import { GoHomeFill } from "react-icons/go";
+import { BsClipboardData,BsBriefcase,BsChatFill } from "react-icons/bs";
+import { BiUser } from "react-icons/bi";
+import { HiHome } from "react-icons/hi2";
 import { Link } from "react-scroll";
 
 const Nav = () =>{
@@ -13,8 +14,9 @@ const Nav = () =>{
                 activeClass="active"
                 smooth={true}
                 spy={true}
+                offset={-200}
                 className="cursor-pointer w-[60] flex items-center justify-center">
-                  Home
+                  <HiHome/>
             </Link>
             <Link
                 to="about"
@@ -22,7 +24,7 @@ const Nav = () =>{
                 smooth={true}
                 spy={true}
                 className="cursor-pointer w-[60] flex items-center justify-center">
-                  About
+                  <BiUser/>
             </Link>
             <Link
                 to="home"
@@ -38,7 +40,7 @@ const Nav = () =>{
                 smooth={true}
                 spy={true}
                 className="cursor-pointer w-[60] flex items-center justify-center">
-                  Contact
+                  <BsChatFill/>
             </Link>
           </div>
       </div>
