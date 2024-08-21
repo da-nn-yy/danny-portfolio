@@ -19,7 +19,7 @@ export default {
       extend: {
         backgroundImage:{
           danBg: "url('./assets/danBg.jpg')",
-        }
+        },
       },
     },
     plugins: [],
