@@ -5,6 +5,11 @@ export default {
       "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
+      fontFamily: {
+        primary: 'Poppins',
+        secondary: 'Poppins',
+        tertiary: 'Aldrich',
+      },
       container: {
         padding: {
           DEFAULT: '15px',
