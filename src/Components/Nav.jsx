@@ -1,6 +1,6 @@
 import { BsChatFill } from "react-icons/bs";
 import { BiUser } from "react-icons/bi";
-import { CgMenuLeft } from "react-icons/cg";
+import { FaAlignLeft } from "react-icons/fa6";
 import { HiHome } from "react-icons/hi2";
 import { Link } from "react-scroll";
 
@@ -33,7 +33,7 @@ const Nav = () =>{
                 smooth={true}
                 spy={true}
                 className="cursor-pointer w-[60] flex items-center justify-center">
-                  <CgMenuLeft/>
+                  <FaAlignLeft/>
             </Link>
             <Link
                 to="contact"
