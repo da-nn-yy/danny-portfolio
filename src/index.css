@@ -52,4 +52,28 @@ body{
   .section {
     @apply flex items-center py-8 lg:py-24 lg:h-screen;
   }
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+  .h3 {
+    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+  }
+  .btn {
+    @apply font-medium text-white rounded-full font-primary;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#0073ff] to-[#4CDB88] font-bold font-primary hover:from-[#4CDB88] hover:to-[#42A6E3];
+  }
+  .section {
+    @apply flex items-center py-8 lg:py-24 lg:h-screen;
+  }
 }
