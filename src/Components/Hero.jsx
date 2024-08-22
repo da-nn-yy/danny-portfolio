@@ -30,10 +30,10 @@ const Hero = () => {
       <p> I am currently studying Computer Science and Engineering at Adama Science and Technology University(ASTU). </p>
       <div>
         <a href="">Contact Me</a>
-        <button className="flex items-center justify-around btn btn-sm hover:bg-line">Download CV <MdOutlineCloudDownload/> </button>
+        <button className="btn btn-sm">Download CV </button>
       </div>
     </section>
   )
 }
 
-export default Hero;
+export default Hero; 
