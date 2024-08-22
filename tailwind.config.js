@@ -8,7 +8,7 @@ export default {
       fontFamily: {
         primary: 'Poppins',
         secondary: 'Poppins',
-        tertiary: 'Aldrich',
+        tertiary: 'Matemize',
       },
       container: {
         padding: {
@@ -23,7 +23,7 @@ export default {
       },
       extend: {
         backgroundImage:{
-          danBg: "url('./assets/danBg.jpg')",
+          danBg: "url('./assets/danBg.mp4')",
         },
       },
     },
