@@ -2,20 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body{
-    background-image: url("/src/assets/danBg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .btn {
   background: linear-gradient(
     92.23deg,
     #005fd3,
   #4CDB88
   );
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
@@ -44,11 +37,11 @@ body{
 }
 
 @layer base {
-  body {
-    background-image: url("/src/assets/danBg.jpg");
+  /* body {
+    background-image: url("/src/assets/danBg.mp4");
     background-size: cover;
     background-repeat: no-repeat;
-  }
+  } */
   .section {
     @apply flex items-center py-8 lg:py-24 lg:h-screen;
   }
