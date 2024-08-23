@@ -12,30 +12,32 @@ const Hero = () => {
                     <motion.h1
                     variants={fadeIn('up',0.3)}
                     initial='hidden'
-                     whileInView={'show'}
+                    whileInView={'show'}
                     viewport={{once:false,amount:0.7}}
                     className="text-[55px] font-bold leading=[0.8] lg:text-[110]">
                       Daniel <span></span>Merga
                     </motion.h1>
                   </div>
-                  <div className="text-[55px] font-bold leading=[0.8] lg:text-[110]">
-                    <span>
+                  <div>
+                    <span className="text-[45px] font-bold leading=[0.8] lg:text-[110]">
                       I am
                     </span>
                     <TypeAnimation
                     sequence={[
                     // Same substring at the start will only be typed out once, initially
-                    'Frontend developer',
+                    ' Frontend developer',
                     1000, // wait 1s before replacing "Mice" with "Hamsters"
-                    'Graphics Desinger',
+                    ' Graphics Desinger',
                     1000,
-                    'UI/UX Desinger',
+                    ' UI/UX Desinger',
                     1000,
                   ]}
                   wrapper="span"
                   speed={30}
                   style={{ fontSize: '2em', display: 'inline-block' }}
-                  repeat={Infinity} />
+                  repeat={Infinity}
+                  className="text-[65px] font-bold leading=[0.8] lg:text-[110]"
+                  />
                   </div>
                   <p> I am currently studying Computer Science and Engineering at Adama Science and Technology University(ASTU). </p>
                   <div>
