@@ -6,9 +6,8 @@ const Hero = () => {
   return (
     <section className="flex items-center text-white section justify-items-center" id="home">
       <div className="container mx-auto">
-          <di className="flex">
-              <div>
-                  <div>
+          <div className="flex">
+              <div className="flex-1 text-center font-secondary lg:text-left">
                     <motion.h1
                     variants={fadeIn('up',0.3)}
                     initial='hidden'
@@ -17,9 +16,8 @@ const Hero = () => {
                     className="text-[55px] font-bold leading=[0.8] lg:text-[110]">
                       Daniel <span></span>Merga
                     </motion.h1>
-                  </div>
                   <div>
-                    <span className="text-[45px] font-bold leading=[0.8] lg:text-[110]">
+                    <span className="">
                       I am
                     </span>
                     <TypeAnimation
@@ -36,7 +34,7 @@ const Hero = () => {
                   speed={30}
                   style={{ fontSize: '2em', display: 'inline-block' }}
                   repeat={Infinity}
-                  className="text-[65px] font-bold leading=[0.8] lg:text-[110]"
+                  className="text-gradient"
                   />
                   </div>
                   <p> I am currently studying Computer Science and Engineering at Adama Science and Technology University(ASTU). </p>
@@ -48,7 +46,7 @@ const Hero = () => {
           <div>
             <img src={logo} alt="" />
           </div>
-          </di>
+          </div>
       </div>
     </section>
   )
