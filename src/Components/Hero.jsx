@@ -3,6 +3,7 @@ import logo from '../assets/DanLogo.svg'
 import { motion } from "framer-motion";
 import { fadeIn } from "../fadeIn";
 import { BsGithub, BsInstagram, BsTelegram ,BsLinkedin} from "react-icons/bs";
+import danCv from '../../DanCV/Daniel-Merga-CV.pdf'
 
 const Hero = () => {
   return (
@@ -24,9 +25,8 @@ const Hero = () => {
                     </span>
                     <TypeAnimation
                     sequence={[
-                    // Same substring at the start will only be typed out once, initially
                     'Frontend developer',
-                    1000, // wait 1s before replacing "Mice" with "Hamsters"
+                    1000,
                     'Graphics Desinger',
                     1000,
                     'UI/UX Desinger',
@@ -41,13 +41,13 @@ const Hero = () => {
                   <p> I am currently studying Computer Science and Engineering at Adama Science and Technology University(ASTU). </p>
                   <div className="flex items-center justify-between max-w-[250px] pt-3 pb-3">
                     <a href="">Contact Me</a>
-                    <button className="btn btn-sm">Download CV </button>
+                    <button className="btn btn-sm"> <a href={danCv} download> Download CV</a></button>
                   </div>
                   <div className="text-[22px] flex justify-between lg:items-center max-w-[150px]">
                     <a href="https://github.com/da-nn-yy.com" className="link"><BsGithub/></a>
-                    <a href=""  className="link"><BsLinkedin/></a>
-                    <a href="" className="link"><BsTelegram/></a>
-                    <a href="" className="link"><BsInstagram/></a>
+                    <a href="https://www.linkedin.com/in/dani-boy-35552624b/"  className="link"><BsLinkedin/></a>
+                    <a href="https://t.me/g_dnl" className="link"><BsTelegram/></a>
+                    <a href="https://www.instagram.com/da_nnn_yyy/" className="link"><BsInstagram/></a>
                   </div>
               </div>
           <div>
