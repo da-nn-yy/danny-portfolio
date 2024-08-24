@@ -19,7 +19,11 @@ const Hero = () => {
                     className="text-[55px] font-bold leading=[0.8] lg:text-[110]">
                       Daniel <span >Merga</span>
                     </motion.h1>
-                  <div>
+                  <motion.div
+                    variants={fadeIn('up',0.4)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once:false,amount:0.7}}>
                     <span className="mr-4 font-bold text-[36px] lg:text-[45px]">
                       I am
                     </span>
@@ -37,22 +41,40 @@ const Hero = () => {
                   repeat={Infinity}
                   className="inline-block font-bold text-transparent bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-[36px] lg:text-[45px]"
                   />
-                  </div>
-                  <p> I am currently studying Computer Science and Engineering at Adama Science and Technology University(ASTU). </p>
-                  <div className="flex items-center justify-between max-w-[250px] pt-3 pb-3">
+                  </motion.div>
+                  <motion.p
+                    variants={fadeIn('up',0.5)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once:false,amount:0.7}}>
+                    I am currently studying Computer Science and Engineering at Adama Science and Technology University(ASTU).
+                  </motion.p>
+                  <motion.div
+                      variants={fadeIn('up',0.6)}
+                      initial='hidden'
+                      whileInView={'show'}
+                      viewport={{once:false,amount:0.7}}className="flex items-center justify-between max-w-[250px] pt-3 pb-3">
                     <a href="">Contact Me</a>
-                    <button className="btn btn-sm"> <a href={danCv} download> Download CV</a></button>
-                  </div>
-                  <div className="text-[22px] flex justify-between lg:items-center max-w-[150px]">
+                    <button className="btn btn-sm" > <a href={danCv} download> Download CV</a></button>
+                  </motion.div>
+                  <motion.div className="text-[22px] flex justify-between lg:items-center max-w-[150px]"
+                      variants={fadeIn('up',0.7)}
+                      initial='hidden'
+                      whileInView={'show'}
+                      viewport={{once:false,amount:0.7}}>
                     <a href="https://github.com/da-nn-yy.com" className="link"><BsGithub/></a>
                     <a href="https://www.linkedin.com/in/dani-boy-35552624b/"  className="link"><BsLinkedin/></a>
                     <a href="https://t.me/g_dnl" className="link"><BsTelegram/></a>
                     <a href="https://www.instagram.com/da_nnn_yyy/" className="link"><BsInstagram/></a>
-                  </div>
+                  </motion.div>
               </div>
-          <div>
+          <motion.div
+                    variants={fadeIn('down',0.3)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once:false,amount:0.7}}>
             <img src={logo} alt="" />
-          </div>
+          </motion.div>
           </div>
       </div>
     </section>
