@@ -1,16 +1,19 @@
-export const fadeIn = (direction = 'up', delay = 0) => {
+export const fadeIn = (direction, delay) => {
   return {
     hidden: {
+      y: direction === 'up' ? 80 : direction === 'down' ? -80 : 0,
       opacity: 0,
-      y: direction === 'up' ? 90 : -90, // Adjust the direction of the animation
+      x: direction === 'left' ? 80 : direction === 'right' ? -80 : 0,
     },
     show: {
-      opacity: 1,
       y: 0,
+      x: 0,
+      opacity: 1,
       transition: {
-        duration: 1.5,
+        type: 'tween',
+        duration: 1.2,
         delay: delay,
-        ease: 'easeOut',
+        ease: [0.25, 0.25, 0.25, 0.75],
       },
     },
   };
