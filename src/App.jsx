@@ -3,7 +3,6 @@ import About from "./Components/About";
 import Hero from "./Components/Hero";
 import Contact from "./Components/Contact";
 import Skills from "./Components/Skills";
-import Header from "./Components/Header";
 import danVidBg from './assets/danBgg.mp4'
 function App() {
 
@@ -18,7 +17,6 @@ function App() {
       />
       <div className="relative z-10">
         <Nav />
-        <Header />
         <Hero />
         <About />
         <Skills />
