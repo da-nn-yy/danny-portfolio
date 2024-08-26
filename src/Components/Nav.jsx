@@ -10,7 +10,7 @@ const Nav = () =>{
     <nav className="fixed w-full top-2 lg:top-8">
 
       <div className="container mx-auto">
-        <div className="h-[96px] flex items-center justify-around rounded-full bg-black/10 backdrop-blur-2xl mx-auto text-2xl max-w-[2000px] text-white bord-grad ">
+        <div className="h-[96px] flex items-center justify-around rounded-full bg-black/20 backdrop-blur-2xl mx-auto text-2xl max-w-[2000px] text-white bord-grad ">
           <div><img src={danLogo} alt="Dan Logo" /></div>
             <div>
                 <div className="flex items-center justify-around mx-auto text-2xl text-white gap-14">
