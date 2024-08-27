@@ -77,7 +77,7 @@ const Hero = () => {
                     <a href="https://github.com/da-nn-yy.com" className="link" target="_blank"><BsGithub/></a>
                     <a href="https://www.linkedin.com/in/dani-boy-35552624b/"  className="link"target="_blank"><BsLinkedin/></a>
                     <a href="https://t.me/g_dnl" className="link"target="_blank"><BsTelegram/></a>
-                    <a href="https://www.instagram.com/da_nnn_yyy/" className="link" target="_blank"></a><BsInstagram/></a>
+                    <a href="https://www.instagram.com/da_nnn_yyy/" className="link" target="_blank"><BsInstagram/></a>
                   </motion.div>
               </div>
           <motion.div
